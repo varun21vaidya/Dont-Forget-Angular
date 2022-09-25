@@ -1,0 +1,32 @@
+<div id="details" class="main-container">
+    <div class="search-container">
+        <div class="search">  
+            <input #filterInput type="text" class="searchTerm" (change)=filter($any($event.target).value)
+                placeholder="What are you looking for?">
+                <!-- <i class="fa fa-search"></i> -->
+        </div>
+    </div>
+
+
+    <!-- why single quotes are given to string attributes, cz angular is expecting
+        a template expression which could be a property name also or a function call so 
+        to distinguish we use '' it as string -->
+    <!-- <app-note-card [title]="'Hey Remember this?'" [body]="'Yes this was that thing'"></app-note-card> -->
+
+    <!-- or we could just use this -->
+    <!-- <app-note-card title="Hey Remember this?" body="Yes this was that thing"></app-note-card> -->
+
+
+    <!-- when click on card of the note in the array it will route
+        to index which is used with help of inbuilt ngFor index-->
+
+    <div class="notes-list" [@listAnime]>
+        <app-note-card *ngFor="let note of filteredNotes;" [link]="generateNoteURL(note)" [@itemAnim]
+            (delete)="deleteNote(note)" [title]="note.title" [body]="note.body"></app-note-card>
+    </div>
+    
+    <div class="fixedAdd">
+    <button class="button" routerLink="new">+ Add</button>
+    </div>
+
+</div>

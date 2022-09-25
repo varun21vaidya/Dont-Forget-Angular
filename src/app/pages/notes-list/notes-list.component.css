@@ -1,0 +1,69 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+.search-container {
+  position: sticky;
+  top: 5px;
+  z-index: 1;
+  height: 50px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.searchTerm {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 15px;
+  border: 1px solid #d0cfce;
+  border-radius: 40px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.searchTerm:focus {
+  color: #00b4cc;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+app-note-card {
+  display: flex;
+  margin: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  background-color: var(--blue);
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  width: 400px;
+  height: 60px;
+  box-shadow: 0 0 15px 5px rgba(var(--purple), 0.2);
+}
+
+.fixedAdd {
+  margin-top: 70px;
+}
+notes-list {
+  /* margin-top: 35px; */
+  /* margin-bottom: 70px; */
+}

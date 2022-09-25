@@ -1,0 +1,21 @@
+<div #container class="note-card-container">
+
+    <a [routerLink]="link">
+        <div class="note-card-content">
+            <div class="note-card-title">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="note-card-body">
+                <p>
+                    {{body}}
+                </p>
+                <div class="fade-out-truncation"></div>
+            </div>
+        </div>
+    </a>
+    
+    <!-- delete card button -->
+    <div class="x-button" (click)="clickToDelete()">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>

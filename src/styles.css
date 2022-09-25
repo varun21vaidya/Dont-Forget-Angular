@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100&display=swap');
+/* set brand colors */
+
+:root {
+  --purple: #a59ad7;
+  --pink: #fe76c2;
+  --blue: #37c7f2;
+  --light-blue: #7bd8f44f;
+  --light-red: #fb6565c3;
+  --light: #ecebebc8;
+  --primary: var(--purple);
+  --body-background: var(--light);
+  --input-background: #f3f5fa;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-size: 20px !important;
+  overflow: auto;
+  font-family: 'Roboto Slab';
+}

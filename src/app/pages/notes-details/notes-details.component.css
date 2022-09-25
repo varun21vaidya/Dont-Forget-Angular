@@ -1,0 +1,65 @@
+
+.form-container{
+    padding: 40px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(white);
+
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input{
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    height: 25px;
+    padding: 10px 15px;
+
+}
+.label{
+    font: "Roboto";
+    font-weight: bold;
+    color: rgba(23, 23, 255, 0.896);
+
+}
+.textarea{
+    /* font: "sans-serif"; */
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 10px 15px;
+
+}
+
+.button{
+    margin-top: 10px;
+    background-color: var(--blue);
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.cancel, .submit{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.input,.textarea .ng-invalid{
+    border-color: red;
+    box-shadow: 5px 5px 5px 5px rgba(red)
+}
+
+.button:disabled{
+    opacity: 0.5;
+}
