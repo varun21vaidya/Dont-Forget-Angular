@@ -6,10 +6,9 @@ import {
   query,
   stagger,
 } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Note } from 'src/app/shared/note.module';
 import { NotesService } from 'src/app/shared/notes.service';
-import { ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-notes-list',
   templateUrl: './notes-list.component.html',
@@ -126,16 +125,15 @@ export class NotesListComponent implements OnInit {
 
   ngOnInit() {
     // first recieve all notes from the service
-    this.notes=this.notesService.getAll()
-    this.filteredNotes=this.notesService.getAll()
-
+    this.notes = this.notesService.getAll();
+    this.filteredNotes = this.notesService.getAll();
   }
 
   // takes emited event from note-card component
   deleteNote(note: Note) {
     let NoteId = this.notesService.getId(note);
     this.notesService.delete(NoteId);
-    this.filter(this.filterInputElRef.nativeElement.value)
+    this.filter(this.filterInputElRef.nativeElement.value);
   }
 
   filter(query: string) {
