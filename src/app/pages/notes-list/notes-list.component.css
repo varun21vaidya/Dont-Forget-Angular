@@ -1,10 +1,11 @@
 .search {
-  width: 100%;
   position: relative;
   display: flex;
 }
 .main-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   max-width: 400px;
   margin: auto;
@@ -15,9 +16,10 @@
   top: 5px;
   z-index: 1;
   height: 50px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   display: block;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 .searchTerm {
   margin: 0 auto;
@@ -37,33 +39,56 @@
 
 app-note-card {
   display: flex;
-  margin: 10px;
+  justify-content: center;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
   background-color: var(--blue);
   border-radius: 2px;
   color: white;
   font-weight: bold;
   font-size: 1rem;
-  padding: 8px 12px;
+  padding: 8px 50px;
   border: none;
   cursor: pointer;
   position: fixed;
   bottom: 0;
-  width: 400px;
+  max-width: 400px;
+  min-width: 300px;
   height: 60px;
+  width: auto;
   box-shadow: 0 0 15px 5px rgba(var(--purple), 0.2);
 }
 
 .fixedAdd {
   margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 notes-list {
-  /* margin-top: 35px; */
-  /* margin-bottom: 70px; */
+  max-width: 400px;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main-container {
+    max-width: 315px;
+  }
+  .fixedAdd .button {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  notes-list,
+  app-note-card {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
 }

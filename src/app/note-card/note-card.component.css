@@ -65,3 +65,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media only screen and (max-width: 480px) {
+  /*Small smartphones [325px -> 425px]*/
+  .note-card-container .x-button {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
