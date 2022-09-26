@@ -151,9 +151,9 @@ export class NotesListComponent implements OnInit {
 
     // compile all relevant results into the allResults Array
     // ie first loop thorugh every term and pass each term
-    // in the relevantNotes funcition which will return a notes
+    // in the relevantNotes function which will return a notes
     // containing those terms and we will add all those notes in
-    // allResults array and return the reult
+    // allResults array and return the result
 
     terms.forEach((term) => {
       let results = this.relevantNotes(term);
