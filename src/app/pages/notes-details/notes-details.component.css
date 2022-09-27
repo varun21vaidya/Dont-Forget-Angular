@@ -60,7 +60,7 @@
 
 .input,
 .textarea .ng-invalid {
-  border-color: red;
+  border-color: black;
   box-shadow: 5px 5px 5px 5px rgba(red);
 }
 
