@@ -2,6 +2,14 @@
 
 DEMO:
 
+https://user-images.githubusercontent.com/65745841/196671732-776f50ba-d23a-4228-842e-208345d2dfcd.mp4
+
+
+https://user-images.githubusercontent.com/65745841/196672043-e0de90a9-7640-4eed-97ae-0ef6ece6f0d6.mp4
+
+
+https://user-images.githubusercontent.com/65745841/196672443-43d1c4af-460a-4780-9ca0-de20a1e7d0d0.mp4
+
 
 Check out the live site Here: https://varun21vaidya.github.io/Dont-Forget/
 
