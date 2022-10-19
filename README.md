@@ -2,8 +2,6 @@
 
 DEMO:
 
-![Create Note](https://user-images.githubusercontent.com/65745841/196666824-953ad4dc-84c2-4b78-b85c-28a9cbcbfa06.gif)
-
 
 Check out the live site Here: https://varun21vaidya.github.io/Dont-Forget/
 
